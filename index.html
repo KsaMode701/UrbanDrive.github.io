@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каршеринг UrbanDrive</title>
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900|Open+Sans:ital,wght@0,300..800;1,300..800|Philosopher:ital,wght@0,400;0,700;1,400;1,700|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900">
+    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900|Philosopher:ital,wght@0,400;0,700;1,400;1,700|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900">
+    <link rel="stylesheet"
+        href="https://fonts.google.com/share?selection.family=Philosopher:ital,wght@0,400;0,700;1,400;1,700|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900">
+</head>
+
+<body>
+    <header>
+        <div class="maincontent">
+            <a href="#" class="logo">UrbanDrive</a>
+            <nav>
+                <a href="#usl">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="contacts.html" class="page_contact">Контакты</a>
+                <button class="contact-btn" id="open-contact-modal">Оставить заявку</button>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="photo">
+        <img class="shir" src="static/image/1.PNG" alt="">
+        <div class="content1">
+            <h1>Путешествуй свободно</h1>
+            <h2 class="h2"> с UrbanDrive</h2>
+            <button class="btn" id="go-to-services">Перейти к тарифам</button>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для заявки -->
+    <div class="contact-modal-overlay" id="contact-modal-overlay">
+        <div class="contact-modal-content">
+            <h2>Оставьте заявку</h2>
+            <form id="contact-form">
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                <div class="contact-modal-buttons">
+                    <button type="submit" class="contact-modal-btn submit">Отправить</button>
+                    <button type="button" class="contact-modal-btn cancel" id="close-contact-modal">Закрыть</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!-- Скрипты -->
+    
+
+
+    <p id="about" class="z3">Почему выбирают нас?</p>
+    <section class="benefits-container">
+
+        <div class="benefit-item-left">
+            <div class="benefit-title"><span class="emoji">🚗</span>Простота аренды</div>
+            <p class="benefit-description">Мы упрощаем процесс аренды автомобилей, чтобы каждый мог оформить заказ
+                быстро <br>и удобно. Оформляй аренду за несколько кликов и начинай свое путешествие без лишних <br>трудностей.
+            </p>
+        </div>
+
+        <div class="benefit-item-right">
+            <div class="benefit-title"><span class="emoji">🕒</span>Быстрые тарифы</div>
+            <p class="benefit-description">У нас разнообразные тарифы, чтобы удовлетворить все потребности клиентов. Ты<br>
+                можешь выбрать подходящий тариф и управлять затратами, планируя свою поездку<br> гибко и просто.
+            </p>
+        </div>
+
+        <div class="benefit-item-left">
+            <div class="benefit-title"><span class="emoji">📞</span>Круглосуточная поддержка</div>
+            <p class="benefit-description">Мы всегда готовы помочь и ответить на твои вопросы в любое время суток.<br> Наши
+                специалисты обеспечат качественную поддержку и помогут при любых<br> ситуациях.</p>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2 class="h22">Отзывы наших клиентов</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <img src="static/image/iii.png" alt="Иван Иванов" class="client-photo">
+                <h3>Иван Соколов</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>"Отличный сервис! Машины всегда в хорошем состоянии."</p>
+            </div>
+            <div class="review-card">
+                <img src="static/image/i.png" alt="Анна Смирнова" class="client-photo">
+                <h3>Анна Смирнова</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>"Очень удобно, что можно арендовать машину в любое время. Рекомендую!"</p>
+            </div>
+            <div class="review-card">
+                <img src="static/image/uglim.jpg" alt="Дмитрий Кузнецов" class="client-photo">
+                <h3>Дима Данкин</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>"Хорошие цены и большой выбор машин. Пользуюсь регулярно."</p>
+            </div>
+        </div>
+    </section>
+    
+      
+
+    <section id="usl" class="n3">
+
+    <p class="z4">Наши тарифы и услуги</p>
+
+    <div class="tariff-container">
+        <div class="tariff-card">
+            <h3 class="tariff-title">Эконом</h3>
+            <img src="static/image/econom.png" alt="Эконом" class="tariff-image1">
+            <p class="tariff-description">Подходит для коротких поездок и экономии.</p>
+            <p class="tariff-price">от 8р/м</p>
+        </div>
+        <div class="tariff-card">
+            <h3 class="tariff-title">Комфорт</h3>
+            <img src="static/image/c1.png" alt="Комфорт" class="tariff-image2">
+            <p class="tariff-description">Просторные авто с улучшенным оснащением для вашего удобства.</p>
+            <p class="tariff-price">от 12р/м</p>
+        </div>
+        <div class="tariff-card">
+            <h3 class="tariff-title">Бизнес</h3>
+            <img src="static/image/b4.png" alt="Бизнес" class="tariff-image3">
+            <p class="tariff-description">Премиальные автомобили для стильных и комфортных поездок.</p>
+            <p class="tariff-price">от 18р/м</p>
+        </div>
+
+    </div>
+    <div class="button-container">
+        <button class="contact-button" onclick="openModal()">Оформить заказ</button>
+    </div>
+    
+    <!-- Модальное окно -->
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Оформить заказ</h2>
+            <p>Вы хотите связаться с оператором для оформления заявки?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn yes" onclick="redirectToCall()">Да</button>
+                <button class="modal-btn no" onclick="closeModal()">Нет</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <div class="content_contact">
+                <div class="contact-info">
+                    <!-- Социальные сети -->
+                    <div class="social-section">
+                        <div class="social-text">Следите за нами в <br>социальных сетях</div>
+                        <div class="social-icons">
+                            <a href="https://www.youtube.com" target="_blank" class="social-link">
+                                <img src="static/image/YouTube.png" alt="YouTube">
+                            </a>
+                            <a href="https://vk.com" target="_blank" class="social-link">
+                                <img src="static/image/VK com.png" alt="VK">
+                            </a>
+                            <a href="https://t.me" target="_blank" class="social-link">
+                                <img src="static/image/Telegram App.png" alt="Telegram">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Email -->
+                    <div class="email-section">
+                        <div class="email">Email</div>
+                        <div class="contact-email">UrbanDrive@gmail.com</div>
+                    </div>
+    
+                    <!-- Телефон -->
+                    <div class="phone-section">
+                        <div class="phone">Наш телефон</div>
+                        <div class="contact-phone">+1234567890</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+
+<script src="static/JavaScript/script.js"></script>
+</body>
+
+</html>
