@@ -7,7 +7,7 @@ header {
     width: 100%;
     background-color:  #1a1a1a; 
     position: fixed;
-    z-index: 9999; 
+    z-index: 9999; /* Поверх всего */
     
 }
 
@@ -26,8 +26,8 @@ header {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     margin-top: 12px;
-    text-decoration: none; 
-    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: transform 0.3s ease, color 0.3s ease; /* Плавная анимация */ 
 }
 
 .logo:hover {
@@ -67,26 +67,26 @@ nav span:hover {
     color: #f39c12; 
 }
 
-
+/* Контейнер с изображением */
 .photo {
-    position: relative; 
+    position: relative; /* Дочерние элементы будут позиционироваться относительно этого блока */
 }
 
-
+/* Изображение */
 .shir {
     height: 100vh;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover; /* Подгоняем изображение, сохраняя пропорции */
 }
 
-
+/* Контейнер для текста поверх изображения */
 .content1 {
-    position: absolute; 
-    top: 27%; 
-    left: 37%; 
-    transform: translate(-50%, -50%);
-    text-align: center; 
-    color: white; 
+    position: absolute; /* Позиционируем поверх изображения */
+    top: 27%; /* Сдвигаем вниз на 50% от высоты */
+    left: 37%; /* Сдвигаем вправо на 50% от ширины */
+    transform: translate(-50%, -50%); /* Центруем текст */
+    text-align: center; /* Центрируем текст внутри блока */
+    color: white; /* Белый цвет текста */
     font-family: 'Roboto', sans-serif;
     max-width: 1440px;
 }
@@ -111,28 +111,28 @@ h1,h2 {
 }
 
 .btn {
-    width: 230px; 
-    height: 50px; 
-    background-color: white; 
-    color: #1a1a1a; 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 16px; 
-    font-weight: 700; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    margin-top: 50px; 
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    width: 230px; /* Ширина */
+    height: 50px; /* Высота */
+    background-color: white; /* Белый фон */
+    color: #1a1a1a; /* Цвет текста */
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+    font-size: 16px; /* Размер текста */
+    font-weight: 700; /* Жирный */
+    border: none; /* Без границы */
+    border-radius: 10px; /* Скругление углов */
+    cursor: pointer; /* Указатель при наведении */
+    margin-top: 50px; /* Отступ сверху */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Тень */
     margin-right: 500px;
     
 }
 
-
+/* Эффект при наведении */
 .btn:hover {
-    background-color: #f39c12; 
-    color: white; 
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.35); 
+    background-color: #f39c12; /* Цвет фона при наведении */
+    color: white; /* Цвет текста при наведении */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.35); /* Усиление тени при наведении */
 }
 
 .benefits-container {
@@ -154,12 +154,12 @@ h1,h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 70px; 
+  gap: 70px; /* Расстояние между блоками */
   padding: 0 30px;
   margin-top: 60px;
 }
 
-
+/* Общая структура блоков */
 .benefit-item-left,
 .benefit-item-right {
   width: 1100px;
@@ -170,17 +170,18 @@ h1,h2 {
   padding: 20px;
 }
 
+/* Блок слева */
 .benefit-item-left {
   position: relative;
 }
 
-
+/* Блок справа */
 .benefit-item-right {
   position: relative;
   margin-left: auto;
 }
 
-/
+/* Заголовок преимущества */
 .benefit-title {
   font-size: 24px;
   font-weight: 700;
@@ -188,7 +189,7 @@ h1,h2 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
+/* Описание внутри блока */
 .benefit-description {
   font-size: 20px;
   font-weight: 400;
@@ -210,7 +211,7 @@ h1,h2 {
     font-size: 40px;
 }
 .reviews {
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9; /* Светло-серый фон */
     padding: 40px 20px;
     text-align: center;
 }
@@ -233,14 +234,14 @@ h1,h2 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px; 
-    height: 350px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: space-between; 
+    width: 300px; /* Фиксированная ширина */
+    height: 350px; /* Фиксированная высота */
+    display: flex; /* Flexbox для выравнивания */
+    flex-direction: column; /* Расположить элементы вертикально */
+    align-items: center; /* Центровка по горизонтали */
+    justify-content: space-between; /* Равномерное распределение элементов */
     text-align: center;
-    overflow: hidden; 
+    overflow: hidden; /* Скрыть элементы, если текст слишком длинный */
 }
 
 
@@ -260,7 +261,7 @@ h1,h2 {
 
 .rating {
     font-size: 1.5rem;
-    color: #FFD700; 
+    color: #FFD700; /* Золотистый цвет для звезд */
     margin-bottom: 10px;
 }
 
@@ -317,14 +318,15 @@ h1,h2 {
 
 
 
+/* Контейнер для карточек */
 .tariff-container {
     display: flex;
     justify-content: center;
-    gap: 23px; 
-    margin-top: 50px; 
+    gap: 23px; /* Расстояние между карточками */
+    margin-top: 50px; /* Отступ сверху */
 }
 
-
+/* Карточка */
 .tariff-card {
     width: 350px;
     height: 450px;
@@ -341,34 +343,34 @@ h1,h2 {
 }
 
 
-
+/* Заголовок */
 .tariff-title {
     font-size: 28px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 50px; /* Отступ сверху */
 }
 
 /* Изображение */
 .tariff-image1 {
-    width: 100%; 
-    height: 200px; 
-    margin: 10px 0; 
+    width: 100%; /* Полная ширина карточки */
+    height: 200px; /* Сохраняем пропорции */
+    margin: 10px 0; /* Отступ сверху и снизу */
 }
 
 .tariff-image2 {
-    width: 80%; 
-    height: auto; 
-    margin: 10px 0; 
+    width: 80%; /* Полная ширина карточки */
+    height: auto; /* Сохраняем пропорции */
+    margin: 10px 0; /* Отступ сверху и снизу */
 }
 
 .tariff-image3 {
-    width: 90%; 
-    height: auto; 
+    width: 90%; /* Полная ширина карточки */
+    height: auto; /* Сохраняем пропорции */
     margin-top: 45px;
 }
-
+/* Описание */
 .tariff-description {
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -378,12 +380,12 @@ h1,h2 {
     color: #555555;
 }
 
-
+/* Цена */
 .tariff-price {
     font-size: 24px;
-    text-align: left; 
-    align-self: flex-start;
-    margin-top: 10px; 
+    text-align: left; /* Выравниваем текст внутри блока цены влево */
+    align-self: flex-start; /* Располагаем сам блок цены слева */
+    margin-top: 10px; /* Отступ сверху */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
@@ -391,7 +393,7 @@ h1,h2 {
 /* Кнопка */
 .button-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center; /* Центрируем кнопку по горизонтали */
     margin-top: 30px;
 }
 
@@ -416,18 +418,18 @@ h1,h2 {
     opacity: 0.8;
 }
 
-
+/* Модальное окно */
 .modal-overlay {
-    display: none; 
+    display: none; /* Скрыто по умолчанию */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /
+    background: rgba(0, 0, 0, 0.5); /* Затемнённый фон */
     justify-content: center;
     align-items: center;
-    z-index: 9999; 
+    z-index: 9999; /* Поверх всего */
 }
 
 .modal-content {
@@ -437,7 +439,7 @@ h1,h2 {
     padding: 20px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease; 
+    animation: fadeIn 0.3s ease; /* Анимация появления */
 }
 
 .modal-content h2 {
@@ -481,7 +483,7 @@ h1,h2 {
     transform: scale(1.05);
 }
 
-
+/* Анимация появления */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -493,7 +495,7 @@ h1,h2 {
     }
 }
 
-
+/* Общий стиль контейнера контактов */
 .contact {
     height: 250px;
     width: 100%;
@@ -510,7 +512,7 @@ h1,h2 {
     align-items: center;
 }
 
-
+/* Левый блок: соцсети */
 .container_contact {
     display: flex;
     flex-direction: column;
@@ -518,6 +520,7 @@ h1,h2 {
     text-align: center;
 }
 
+/* Стиль текста */
 .social-text {
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
@@ -530,6 +533,7 @@ h1,h2 {
     gap: 20px;
 }
 
+/* Иконки */
 .social-link img {
     width: 70px;
     height: 70px;
@@ -539,19 +543,20 @@ h1,h2 {
 .social-link:hover img {
     transform: scale(1.1);
 }
-
+/* Общий стиль для контейнера */
+/* Контейнер с информацией */
 .contact-info {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Равномерно распределяет блоки */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto; 
-    padding: 50px 30px 0; 
+    margin: 0 auto; /* Центрирование */
+    padding: 50px 30px 0; /* 50px сверху, 30px по бокам, 0 снизу */
     height: 100%;
 }
 
-
+/* Социальные сети, Email и Телефон */
 .social-section,
 .email-section,
 .phone-section {
@@ -559,17 +564,17 @@ h1,h2 {
     flex-direction: column;
 }
 
-
+/* Заголовки */
 .social-text,
 .email,
 .phone {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 15px; 
+    margin-bottom: 15px; /* Отступ вниз */
 }
 
-
+/* Текст под заголовками */
 .contact-email,
 .contact-phone {
     font-size: 17px;
@@ -577,11 +582,11 @@ h1,h2 {
     color: #333;
 }
 
-
+/* Иконки */
 .social-icons {
     display: flex;
     gap: 15px;
-    margin-top: 10px; 
+    margin-top: 10px; /* Отступ от заголовка */
 }
 
 .social-link img {
@@ -603,44 +608,44 @@ h1,h2 {
     opacity: 1;
   }
     
- 
- 
+  /* Модальное окно для заявки */
+ /* Основные стили кнопки "Оставить заявку" */
 .contact-btn {
-    background: none; 
-    border: none; 
-    color: white; 
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px; 
-    cursor: pointer; 
-    text-decoration: none; 
-    margin-top: 17px; 
-    transition: color 0.3s; 
+    background: none; /* Убираем фон кнопки */
+    border: none; /* Убираем рамку */
+    color: white; /* Цвет текста */
+    font-family: 'Roboto', sans-serif; /* Шрифт как у ссылок */
+    font-size: 18px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-top: 17px; /* Отступ как у ссылок */
+    transition: color 0.3s; /* Плавный эффект при наведении */
 }
 
-
+/* Эффект при наведении на кнопку */
 .contact-btn:hover {
-    color: #f39c12; 
+    color: #f39c12; /* Цвет при наведении */
 }
 
-
+/* Навигация */
 nav {
     display: flex; 
-    gap: 20px; 
-    align-items: center; 
+    gap: 20px; /* Равномерное расстояние между элементами */
+    align-items: center; /* Выравнивание по центру по вертикали */
 }
 
-
+/* Модальное окно для заявки */
 .contact-modal-overlay {
-    display: none; 
+    display: none; /* Скрыто по умолчанию */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5); /* Затемнённый фон */
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 9999; /* Поверх всего */
 }
 
 .contact-modal-content {
@@ -650,7 +655,7 @@ nav {
     padding: 20px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease; 
+    animation: fadeIn 0.3s ease; /* Анимация появления */
 }
 
 .contact-modal-content h2 {
@@ -697,5 +702,10 @@ nav {
 .contact-modal-btn:hover {
     transform: scale(1.05);
 }
+
+footer {
+    height: 250px;
+}
+
 
 
